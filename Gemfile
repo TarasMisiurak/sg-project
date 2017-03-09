@@ -59,3 +59,7 @@ gem 'rails_admin', '~> 1.1.1'
 
 gem 'devise'
 
+gem "slim-rails"
+
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+
