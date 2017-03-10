@@ -1,0 +1,73 @@
+body.preload {
+  animation: none !important;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(224, 224, 224, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(19, 41, 60, 1);
+    border-bottom-width: 0px;
+}
+
+@keyframes after-link-hover {
+    from {color: rgba(138, 138, 138, 1);}
+    to {color: rgba(224, 224, 224, 1);}
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(224, 224, 224, 1);
+    background-color: rgba(19, 41, 60, 1);
+    animation-name: after-link-hover;
+    animation-duration: 1s;
+}
+
+@keyframes link-hover {
+    from {color: rgba(224, 224, 224, 1);}
+    to {color: rgba(138, 138, 138, 1);}
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(138, 138, 138, 1);
+    background-color: rgba(19, 41, 60, 1);
+    animation-name: link-hover;
+    animation-duration: 1s;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(138, 138, 138, 1);
+    background-color: rgba(19, 41, 60, 1);
+    animation: none !important;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #13293c;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #13293c;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #13293c;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #13293c;
+}
+
+#custom-bootstrap-menu.navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+#custom-bootstrap-navbar.navbar-collapse {
+    text-align: center;
+}
+
+#custom-bootstrap-navbar.navbar-nav>li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
