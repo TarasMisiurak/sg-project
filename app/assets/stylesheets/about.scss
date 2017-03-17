@@ -1,0 +1,167 @@
+/*Top Image*/
+
+.top-image .image-block {
+	height: 500px;
+	width: 100%;
+	background-color: black;
+	margin-top: -20px;
+}
+
+.top-image .motto {
+	padding-top: 350px;
+	text-align: center;
+}
+
+.top-image .motto .text-block h3 {
+	color: #f1f1f1;
+}
+
+/*.top-image .text-block {
+	text-align: center;
+	padding-top: 170px;
+}*/
+
+/*General Text*/
+
+.general-text {
+}
+
+.general-text .top-text-block {
+	text-align: center;
+	padding-top: 50px;
+	height: 200px;
+}
+
+.general-text .text-block {
+	padding-top: 20px;
+}
+
+.general-text .text-block p {
+	font-size: 18px;
+}
+
+.general-text .logo-block {
+	background-color: black;
+}
+
+/*Statistics*/
+
+.statistics {
+	margin-top: 50px;
+}
+
+.statistics .block {
+	height: 150px;
+}
+
+.statistics .block .text {
+	text-align: center;
+}
+
+/*Image Links*/
+
+.image-links {
+	margin-top: 30px;
+}
+
+.image-links .block {
+	height: 180px;
+	border: 1px solid black;
+}
+
+.image-links .block .inner-block {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+/*Company Values*/
+
+.company-values {
+	margin-top: 30px;
+}
+
+.company-values .top-text-block {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.company-values .text-block {
+	text-align: center;
+	padding-top: 20px;
+}
+
+/*Team*/
+
+.team {
+
+}
+
+.team .description .text-block {
+	text-align: center;
+	margin-top: 50px;
+	height: 50px;
+}
+
+.team .images .image-block {
+	height: 180px;
+	border: 1px solid black;
+	margin-top: 50px;
+}
+
+.team .team-section-btn {
+	text-align: center;
+	margin-top: 30px;
+}
+
+/*Address Info*/
+
+.address-info {
+	margin-top: 500px;
+}
+
+.address-info hr {
+	width: 90%;
+}
+
+.address-info .map-block .text {
+	height: 100px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.address-info .map-block .google-maps {
+	height: 400px;
+	pointer-events: none;
+}
+
+.address-info .text-block {
+	text-align: center;
+	margin-top: 100px;
+	height: 100px;
+	margin-bottom: 100px;
+}
+
+/*Contact Us*/
+
+.contact-us {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.contact-us .header-text-block {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.contact-us .text-block {
+	margin-top: 50px;
+}
+
+/*Bottom Image*/
+
+.bottom-image {
+	background-color: black;
+	height: 500px;
+}

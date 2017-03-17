@@ -1,6 +1,6 @@
 <body class="preload">
     <link rel="stylesheet" href="/assets/navbar.scss">
-    <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-static-top" role="navigation">
+    <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-static-top nav-preload" role="navigation">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -11,11 +11,11 @@
                     <div class="collapse navbar-collapse navbar-menubuilder">
                         <ul class="nav navbar-nav navbar-left">
                             <li class="nav-item <%= active_page_class(root_path) %>"><%= link_to 'Home', root_path, class: "nav-link"%></li>
-                            <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/about-us">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact">Vacancies</a></li>
+                            <li class="nav-item <%= active_page_class(portfolio_path) %>"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+                            <li class="nav-item <%= active_page_class(about_path) %>"><a class="nav-link" href="/about">About</a></li>
+                            <li class="nav-item <%= active_page_class(contact_path) %>"><a class="nav-link" href="/contact">Contact Us</a></li>
+                            <li class="nav-item <%= active_page_class(gallery_path) %>"><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li class="nav-item <%= active_page_class(jobs_path) %>"><a class="nav-link" href="/jobs">Vacancies</a></li>
                         </ul>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
     </div>
     <script type="text/javascript">
         $(window).load(function() {
-            $("body").removeClass("preload");
+            $("div").removeClass("nav-preload");
         });
     </script>
 </body>

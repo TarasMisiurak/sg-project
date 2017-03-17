@@ -53,6 +53,14 @@ group :development do
     gem 'capistrano3-puma',   require: false
 end
 
+group :development do
+
+  gem "better_errors"
+
+  gem 'faker', '~> 1.6', '>= 1.6.3'
+
+end
+
 gem 'puma'
 
 gem 'rails_admin', '~> 1.1.1'
