@@ -1,0 +1,214 @@
+@media only screen and (max-width : 320px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+	.what-we-do-partial .inner-block {
+		height: auto !important;
+		width: 100% !important;
+		border: 3px solid rgba(19,41,60,0.2);
+		background-color: white;
+	}
+
+	.what-we-do-partial .inner-block .image-block {
+		height: 140px !important;
+		width: 140px !important;
+		margin: 0 auto !important;
+		padding-top: 10px;
+	}
+
+	.what-we-do .inner-block .image-block .image {
+		height: 140px !important;
+		width: 140px !important;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	.what-we-do-partial .link-block a,
+	.what-we-do-partial .link-block a:hover,
+	.what-we-do-partial .link-block a:focus,
+	.what-we-do-partial .link-block a.active,
+	.what-we-do-partial .link-block a.active:hover,
+	.what-we-do-partial .link-block a.active:focus {
+		text-decoration: none;
+		color: black;
+	}
+
+	@keyframes inner-block-hover {
+		from{border: 3px solid rgba(19,41,60,0.2);
+			background-color: white;}
+		to{border: 3px solid rgba(19,41,60,1);
+			background-color: rgba(245,245,245,0.7);}
+	}
+
+	@keyframes after-inner-block-hover {
+		from{border: 3px solid rgba(19,41,60,1);
+			background-color: rgba(245,245,245,0.7);}
+		to{border: 3px solid rgba(19,41,60,0.2);
+			background-color: white;}
+	}
+
+	.what-we-do-partial .inner-block {
+		height: 250px;
+		width: 250px;
+		border: 3px solid rgba(19,41,60,0.2);
+		background-color: white;
+		animation-name: after-inner-block-hover;
+		animation-duration: 1s;
+	}
+
+	.what-we-do-partial .inner-block:hover,
+	.what-we-do-partial .inner-block:focus {
+		border: 3px solid rgba(19,41,60,1);
+		background-color: rgba(245,245,245,0.7);
+		animation-name: inner-block-hover;
+		animation-duration: 1s;
+	}
+
+	.what-we-do-partial .inner-block .image-block {
+		height: 150px;
+		width: 150px;
+		margin-top: 20px;
+		margin-left: 47px;
+	}
+
+	.what-we-do .inner-block .image-block .image {
+		height: 150px;
+		width: 150px;
+		margin: 0 auto;
+	}
+
+	.what-we-do-partial .inner-block .text-block {
+		margin-top: 30px;
+	}
+	}
+
+@media only screen and (max-width : 1200px) {
+	.what-we-do-partial .link-block a,
+	.what-we-do-partial .link-block a:hover,
+	.what-we-do-partial .link-block a:focus,
+	.what-we-do-partial .link-block a.active,
+	.what-we-do-partial .link-block a.active:hover,
+	.what-we-do-partial .link-block a.active:focus {
+		text-decoration: none;
+		color: black;
+	}
+
+	@keyframes inner-block-hover {
+		from{border: 3px solid rgba(19,41,60,0.2);
+			background-color: white;}
+		to{border: 3px solid rgba(19,41,60,1);
+			background-color: rgba(245,245,245,0.7);}
+	}
+
+	@keyframes after-inner-block-hover {
+		from{border: 3px solid rgba(19,41,60,1);
+			background-color: rgba(245,245,245,0.7);}
+		to{border: 3px solid rgba(19,41,60,0.2);
+			background-color: white;}
+	}
+
+	.what-we-do-partial .inner-block {
+		height: 250px;
+		width: 250px;
+		border: 3px solid rgba(19,41,60,0.2);
+		background-color: white;
+		animation-name: after-inner-block-hover;
+		animation-duration: 1s;
+	}
+
+	.what-we-do-partial .inner-block:hover,
+	.what-we-do-partial .inner-block:focus {
+		border: 3px solid rgba(19,41,60,1);
+		background-color: rgba(245,245,245,0.7);
+		animation-name: inner-block-hover;
+		animation-duration: 1s;
+	}
+
+	.what-we-do-partial .inner-block .image-block {
+		height: 150px;
+		width: 150px;
+		margin-top: 20px;
+		margin-left: 47px;
+	}
+
+	.what-we-do .inner-block .image-block .image {
+		height: 150px;
+		width: 150px;
+		margin: 0 auto;
+	}
+
+	.what-we-do-partial .inner-block .text-block {
+		margin-top: 30px;
+	}
+}
+
+/*.link-block-1,
+.link-block-2,
+.link-block-3,
+.link-block-4 {
+	height: 150px;
+	background-color: black;
+	width: 150px;
+}*/
+
+.what-we-do-partial .link-block a,
+.what-we-do-partial .link-block a:hover,
+.what-we-do-partial .link-block a:focus,
+.what-we-do-partial .link-block a.active,
+.what-we-do-partial .link-block a.active:hover,
+.what-we-do-partial .link-block a.active:focus {
+	text-decoration: none;
+	color: black;
+}
+
+@keyframes inner-block-hover {
+	from{border: 3px solid rgba(19,41,60,0.2);
+		background-color: white;}
+	to{border: 3px solid rgba(19,41,60,1);
+		background-color: rgba(245,245,245,0.7);}
+}
+
+@keyframes after-inner-block-hover {
+	from{border: 3px solid rgba(19,41,60,1);
+		background-color: rgba(245,245,245,0.7);}
+	to{border: 3px solid rgba(19,41,60,0.2);
+		background-color: white;}
+}
+
+.what-we-do-partial .inner-block {
+	height: 250px;
+	width: 250px;
+	border: 3px solid rgba(19,41,60,0.2);
+	background-color: white;
+	animation-name: after-inner-block-hover;
+	animation-duration: 1s;
+}
+
+.what-we-do-partial .inner-block:hover,
+.what-we-do-partial .inner-block:focus {
+	border: 3px solid rgba(19,41,60,1);
+	background-color: rgba(245,245,245,0.7);
+	animation-name: inner-block-hover;
+	animation-duration: 1s;
+}
+
+.what-we-do-partial .inner-block .image-block {
+	margin-top: 20px;
+	margin-left: 47px;
+}
+
+.what-we-do .inner-block .image-block .image {
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.what-we-do-partial .inner-block .text-block {
+	margin-top: 30px;
+}

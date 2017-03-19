@@ -63,6 +63,29 @@ body .nav-preload {
     vertical-align: top;
 }
 
+#custom-bootstrap-menu .navbar-nav .nav-dropdown-menu>li>a {
+    color: rgba(224, 224, 224, 1);
+    background-color: rgba(19, 41, 60, 1);
+    animation-name: after-link-hover;
+    animation-duration: 1s;
+}
+
+#custom-bootstrap-menu .navbar-nav .nav-dropdown-menu>li>a:hover,
+#custom-bootstrap-menu .navbar-nav .nav-dropdown-menu>li>a:focus {
+    color: rgba(138, 138, 138, 1);
+    background-color: rgba(19, 41, 60, 1);
+    animation-name: link-hover;
+    animation-duration: 1s;
+}
+
+#custom-bootstrap-menu .navbar-nav .nav-dropdown-menu>.active>a,
+#custom-bootstrap-menu .navbar-nav .nav-dropdown-menu>.active>a:hover,
+#custom-bootstrap-menu .navbar-nav .nav-dropdown-menu>.active>a:focus {
+    color: rgba(138, 138, 138, 1);
+    background-color: rgba(19, 41, 60, 1);
+    animation: none !important;
+}
+
 #custom-bootstrap-navbar.navbar-collapse {
     text-align: center;
 }

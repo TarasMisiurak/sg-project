@@ -1,22 +1,1102 @@
 /*Mobile first approach*/
 @media only screen and (max-width : 320px) {
+	/*Header*/
 
+	.image-carousel {
+		height: 500px;
+		width: 100%;
+		background-color: black;
+		margin-top: -20px;
+	}
+
+	/*Carousel*/
+
+	#thumbnail-preview-indicators {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	}
+
+	/*#thumbnail-preview-indicators .carousel-controls {
+	 	position:relative; 
+	  	width:300px;
+	  	margin:0 auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control {
+	  width:auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+	  position:static;
+	  display:block;
+	  width:auto;
+	}
+
+	#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left:before {
+	  margin-left:0;
+	}*/
+
+	#thumbnail-preview-indicators .slides .slide-1, 
+	#thumbnail-preview-indicators .slides .slide-2,
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-size: cover;
+	  background-position: center center;
+	  background-repeat: no-repeat;
+	}
+	    #thumbnail-preview-indicators,
+	    #thumbnail-preview-indicators .slides,
+	    #thumbnail-preview-indicators .slides .slide-1, 
+	    #thumbnail-preview-indicators .slides .slide-2,
+	    #thumbnail-preview-indicators .slides .slide-3 {
+	      height: 500px;
+	    }
+	#thumbnail-preview-indicators .slides .slide-1 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg); 
+	}
+	#thumbnail-preview-indicators .slides .slide-2 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg);
+	}
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg);
+	}
+	#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
+	  top: 20%;
+	  /*bottom: inherit;*/
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li {
+		background-color: rgba(255,255,255,0.1);
+		position: relative;
+	  	width: 100px;
+	  	height: 4px;
+	  	border-radius: 0;
+	  	border: 1px solid rgba(255,255,255,0.1); 
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li.active {
+	  position: relative;
+	  width: 100px;
+	  height: 4px;
+	  border-radius: 0;  
+	  background-color: rgba(255,255,255,0.7);
+	}
+	#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	  position: absolute;
+	  top: 0;
+	  width: 100px;
+	  display: none;
+	  opacity: 0;
+	  left: 50%;
+	  margin-top: -80px;
+	  margin-left: -50px;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
+	  display: block;
+	  opacity: .8;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
+	  opacity: 1;
+	}
+	@media screen and (max-width : 480px) {    
+	    #thumbnail-preview-indicators .carousel-indicators li,
+	    #thumbnail-preview-indicators .carousel-indicators li.active {
+	      width: 50px;
+	      height: 8px;
+	      position: relative;
+	    }
+	    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	       width: 50px;
+	       left: 50%;
+	       margin-top: -50px;
+	       margin-left: -25px;
+	    }
+	}
+
+	#thumbnail-preview-indicators .carousel-control {
+
+	}
+
+	#thumbnail-preview-indicators .carousel-inner .btn-primary {
+		background-color: rgba(19, 41, 60, 1);
+	}
+
+	/*Image Carousel*/
+
+	/*What We Do*/
+
+	.what-we-do {
+		margin-top: 30px;
+	}
+
+	.what-we-do .text-block {
+		text-align: center;
+	}
+
+	.what-we-do .partial {
+		margin-top: 30px;
+	}
+
+	/*News*/
+
+	.news {
+		margin-top: 30px;
+	}
+
+	.news .news-block {
+		height: auto !important;
+		background-color: rgba(245, 245, 245, 0.7);
+		padding-bottom: 30px;
+	}
+
+	.news .news-block .title-block {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.news .inner-block {
+		height: 320px !important;
+		background-color: white;
+		border: 1px solid rgba(19, 41, 60, 0.7);
+		margin-top: 30px;
+	}
+
+	.news .inner-block .title-block {
+
+	}
+
+	.news .inner-block .date-block {
+		text-align: center;
+	}
+
+	.news .inner-block .text-block {
+		margin-top: 30px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+
+	/*More Info*/
+
+	.more-info .more-info-block {
+		height: 500px;
+		background-image: url(../public_images/book.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	.more-info .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	/*Contact Us*/
+
+	.contact-us {
+		height: 500px;
+		margin-top: 0px;
+		background-image: url(../public_images/nyc_skyline.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    margin-bottom: 0px;
+	}
+
+	.contact-us .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	.contact-us .block .text-block .btn-default {
+		background-color: rgba(19, 41, 60, 1);
+		color: white;
+	}	
 }
-
+/* ########### SM ########### SM ########### SM ########### SM ########### SM ########### SM ########### SM ########### */
 @media only screen and (max-width : 480px) {
+	/*Header*/
 
+	.image-carousel {
+		height: 500px;
+		width: 100%;
+		background-color: black;
+		margin-top: -20px;
+	}
+
+	/*Carousel*/
+
+	#thumbnail-preview-indicators {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	}
+
+	/*#thumbnail-preview-indicators .carousel-controls {
+	 	position:relative; 
+	  	width:300px;
+	  	margin:0 auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control {
+	  width:auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+	  position:static;
+	  display:block;
+	  width:auto;
+	}
+
+	#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left:before {
+	  margin-left:0;
+	}*/
+
+	#thumbnail-preview-indicators .slides .slide-1, 
+	#thumbnail-preview-indicators .slides .slide-2,
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-size: cover;
+	  background-position: center center;
+	  background-repeat: no-repeat;
+	}
+	    #thumbnail-preview-indicators,
+	    #thumbnail-preview-indicators .slides,
+	    #thumbnail-preview-indicators .slides .slide-1, 
+	    #thumbnail-preview-indicators .slides .slide-2,
+	    #thumbnail-preview-indicators .slides .slide-3 {
+	      height: 500px;
+	    }
+	#thumbnail-preview-indicators .slides .slide-1 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg); 
+	}
+	#thumbnail-preview-indicators .slides .slide-2 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg);
+	}
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg);
+	}
+	#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
+	  top: 20%;
+	  /*bottom: inherit;*/
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li {
+		background-color: rgba(255,255,255,0.1);
+		position: relative;
+	  	width: 100px;
+	  	height: 4px;
+	  	border-radius: 0;
+	  	border: 1px solid rgba(255,255,255,0.1); 
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li.active {
+	  position: relative;
+	  width: 100px;
+	  height: 4px;
+	  border-radius: 0;  
+	  background-color: rgba(255,255,255,0.7);
+	}
+	#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	  position: absolute;
+	  top: 0;
+	  width: 100px;
+	  display: none;
+	  opacity: 0;
+	  left: 50%;
+	  margin-top: -80px;
+	  margin-left: -50px;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
+	  display: block;
+	  opacity: .8;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
+	  opacity: 1;
+	}
+	@media screen and (max-width : 480px) {    
+	    #thumbnail-preview-indicators .carousel-indicators li,
+	    #thumbnail-preview-indicators .carousel-indicators li.active {
+	      width: 50px;
+	      height: 8px;
+	      position: relative;
+	    }
+	    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	       width: 50px;
+	       left: 50%;
+	       margin-top: -50px;
+	       margin-left: -25px;
+	    }
+	}
+
+	#thumbnail-preview-indicators .carousel-control {
+
+	}
+
+	#thumbnail-preview-indicators .carousel-inner .btn-primary {
+		background-color: rgba(19, 41, 60, 1);
+	}
+
+	/*Image Carousel*/
+
+	/*What We Do*/
+
+	.what-we-do {
+		margin-top: 30px;
+	}
+
+	.what-we-do .text-block {
+		text-align: center;
+	}
+
+	.what-we-do .partial {
+		margin-top: 30px;
+	}
+
+	/*News*/
+
+	.news {
+		margin-top: 30px;
+	}
+
+	.news .news-block {
+		height: auto !important;
+		background-color: rgba(245, 245, 245, 0.7);
+		padding-bottom: 30px;
+	}
+
+	.news .news-block .title-block {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.news .inner-block {
+		height: 320px !important;
+		background-color: white;
+		border: 1px solid rgba(19, 41, 60, 0.7);
+		margin-top: 30px;
+	}
+
+	.news .inner-block .title-block {
+
+	}
+
+	.news .inner-block .date-block {
+		text-align: center;
+	}
+
+	.news .inner-block .text-block {
+		margin-top: 30px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+
+	/*More Info*/
+
+	.more-info .more-info-block {
+		height: 500px;
+		background-image: url(../public_images/book.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    margin-bottom: 0px;
+	}
+
+	.more-info .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	/*Contact Us*/
+
+	.contact-us {
+		height: 500px;
+		margin-top: 0px;
+		background-image: url(../public_images/nyc_skyline.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	.contact-us .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	.contact-us .block .text-block .btn-default {
+		background-color: rgba(19, 41, 60, 1);
+		color: white;
+	}
 }
+
+/* ########### MD ########### MD ########### MD ########### MD ########### MD ########### MD ########### MD ########### */
 
 @media only screen and (max-width : 768px) {
+	/*Header*/
 
+	.image-carousel {
+		height: 500px;
+		width: 100%;
+		background-color: black;
+		margin-top: -20px;
+	}
+
+	/*Carousel*/
+
+	#thumbnail-preview-indicators {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	}
+
+	/*#thumbnail-preview-indicators .carousel-controls {
+	 	position:relative; 
+	  	width:300px;
+	  	margin:0 auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control {
+	  width:auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+	  position:static;
+	  display:block;
+	  width:auto;
+	}
+
+	#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left:before {
+	  margin-left:0;
+	}*/
+
+	#thumbnail-preview-indicators .slides .slide-1, 
+	#thumbnail-preview-indicators .slides .slide-2,
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-size: cover;
+	  background-position: center center;
+	  background-repeat: no-repeat;
+	}
+	    #thumbnail-preview-indicators,
+	    #thumbnail-preview-indicators .slides,
+	    #thumbnail-preview-indicators .slides .slide-1, 
+	    #thumbnail-preview-indicators .slides .slide-2,
+	    #thumbnail-preview-indicators .slides .slide-3 {
+	      height: 500px;
+	    }
+	#thumbnail-preview-indicators .slides .slide-1 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg); 
+	}
+	#thumbnail-preview-indicators .slides .slide-2 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg);
+	}
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg);
+	}
+	#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
+	  top: 20%;
+	  /*bottom: inherit;*/
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li {
+		background-color: rgba(255,255,255,0.1);
+		position: relative;
+	  	width: 100px;
+	  	height: 4px;
+	  	border-radius: 0;
+	  	border: 1px solid rgba(255,255,255,0.1); 
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li.active {
+	  position: relative;
+	  width: 100px;
+	  height: 4px;
+	  border-radius: 0;  
+	  background-color: rgba(255,255,255,0.7);
+	}
+	#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	  position: absolute;
+	  top: 0;
+	  width: 100px;
+	  display: none;
+	  opacity: 0;
+	  left: 50%;
+	  margin-top: -80px;
+	  margin-left: -50px;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
+	  display: block;
+	  opacity: .8;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
+	  opacity: 1;
+	}
+	@media screen and (max-width : 480px) {    
+	    #thumbnail-preview-indicators .carousel-indicators li,
+	    #thumbnail-preview-indicators .carousel-indicators li.active {
+	      width: 50px;
+	      height: 8px;
+	      position: relative;
+	    }
+	    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	       width: 50px;
+	       left: 50%;
+	       margin-top: -50px;
+	       margin-left: -25px;
+	    }
+	}
+
+	#thumbnail-preview-indicators .carousel-control {
+
+	}
+
+	#thumbnail-preview-indicators .carousel-inner .btn-primary {
+		background-color: rgba(19, 41, 60, 1);
+	}
+
+	/*Image Carousel*/
+
+	/*What We Do*/
+
+	.what-we-do {
+		margin-top: 30px;
+	}
+
+	.what-we-do .text-block {
+		text-align: center;
+	}
+
+	.what-we-do .partial {
+		margin-top: 30px;
+	}
+
+	/*News*/
+
+	.news {
+		margin-top: 30px;
+	}
+
+	.news .news-block {
+		height: auto !important;
+		background-color: rgba(245, 245, 245, 0.7);
+		padding-bottom: 30px;
+	}
+
+	.news .news-block .title-block {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.news .inner-block {
+		height: 300px;
+		background-color: white;
+		border: 1px solid rgba(19, 41, 60, 0.7);
+		margin-top: 30px;
+
+	}
+
+	.news .inner-block .title-block {
+
+	}
+
+	.news .inner-block .date-block {
+		text-align: center;
+	}
+
+	.news .inner-block .text-block {
+		margin-top: 30px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+
+	/*More Info*/
+
+	.more-info .more-info-block {
+		height: 500px;
+		background-image: url(../public_images/book.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	.more-info .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	/*Contact Us*/
+
+	.contact-us {
+		height: 500px;
+		margin-top: 0px;
+		background-image: url(../public_images/nyc_skyline.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	.contact-us .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	.contact-us .block .text-block .btn-default {
+		background-color: rgba(19, 41, 60, 1);
+		color: white;
+	}
 }
 
-@media only screen and (max-width : 992px) {
+/* ########### LG ########### LG ########### LG ########### LG ########### LG ########### LG ########### LG ########### */
 
+@media only screen and (max-width : 992px) {
+	/*Header*/
+
+	.image-carousel {
+		height: 500px;
+		width: 100%;
+		background-color: black;
+		margin-top: -20px;
+	}
+
+	/*Carousel*/
+
+	#thumbnail-preview-indicators {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	}
+
+	/*#thumbnail-preview-indicators .carousel-controls {
+	 	position:relative; 
+	  	width:300px;
+	  	margin:0 auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control {
+	  width:auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+	  position:static;
+	  display:block;
+	  width:auto;
+	}
+
+	#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left:before {
+	  margin-left:0;
+	}*/
+
+	#thumbnail-preview-indicators .slides .slide-1, 
+	#thumbnail-preview-indicators .slides .slide-2,
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-size: cover;
+	  background-position: center center;
+	  background-repeat: no-repeat;
+	}
+	    #thumbnail-preview-indicators,
+	    #thumbnail-preview-indicators .slides,
+	    #thumbnail-preview-indicators .slides .slide-1, 
+	    #thumbnail-preview-indicators .slides .slide-2,
+	    #thumbnail-preview-indicators .slides .slide-3 {
+	      height: 500px;
+	    }
+	#thumbnail-preview-indicators .slides .slide-1 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg); 
+	}
+	#thumbnail-preview-indicators .slides .slide-2 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg);
+	}
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg);
+	}
+	#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
+	  top: 20%;
+	  /*bottom: inherit;*/
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li {
+		background-color: rgba(255,255,255,0.1);
+		position: relative;
+	  	width: 100px;
+	  	height: 4px;
+	  	border-radius: 0;
+	  	border: 1px solid rgba(255,255,255,0.1); 
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li.active {
+	  position: relative;
+	  width: 100px;
+	  height: 4px;
+	  border-radius: 0;  
+	  background-color: rgba(255,255,255,0.7);
+	}
+	#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	  position: absolute;
+	  top: 0;
+	  width: 100px;
+	  display: none;
+	  opacity: 0;
+	  left: 50%;
+	  margin-top: -80px;
+	  margin-left: -50px;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
+	  display: block;
+	  opacity: .8;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
+	  opacity: 1;
+	}
+	@media screen and (max-width : 480px) {    
+	    #thumbnail-preview-indicators .carousel-indicators li,
+	    #thumbnail-preview-indicators .carousel-indicators li.active {
+	      width: 50px;
+	      height: 8px;
+	      position: relative;
+	    }
+	    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	       width: 50px;
+	       left: 50%;
+	       margin-top: -50px;
+	       margin-left: -25px;
+	    }
+	}
+
+	#thumbnail-preview-indicators .carousel-control {
+
+	}
+
+	#thumbnail-preview-indicators .carousel-inner .btn-primary {
+		background-color: rgba(19, 41, 60, 1);
+	}
+
+	/*Image Carousel*/
+
+	/*What We Do*/
+
+	.what-we-do {
+		margin-top: 30px;
+	}
+
+	.what-we-do .text-block {
+		text-align: center;
+	}
+
+	.what-we-do .partial {
+		margin-top: 30px;
+	}
+
+	/*News*/
+
+	.news {
+		margin-top: 30px;
+	}
+
+	.news .news-block {
+		height: 500px;
+		background-color: rgba(245, 245, 245, 0.7);
+	}
+
+	.news .news-block .title-block {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.news .inner-block {
+		height: 300px;
+		background-color: white;
+		border: 1px solid rgba(19, 41, 60, 0.7);
+		margin-top: 30px;
+	}
+
+	.news .inner-block .title-block {
+
+	}
+
+	.news .inner-block .date-block {
+		text-align: center;
+	}
+
+	.news .inner-block .text-block {
+		margin-top: 30px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+
+	/*More Info*/
+
+	.more-info .more-info-block {
+		height: 500px;
+		background-image: url(../public_images/book.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	.more-info .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	/*Contact Us*/
+
+	.contact-us {
+		height: 500px;
+		margin-top: 0px;
+		background-image: url(../public_images/nyc_skyline.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	.contact-us .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	.contact-us .block .text-block .btn-default {
+		background-color: rgba(19, 41, 60, 1);
+		color: white;
+	}
 }
 
 @media only screen and (max-width : 1200px) {
+	/*Header*/
 
+	.image-carousel {
+		height: 500px;
+		width: 100%;
+		background-color: black;
+		margin-top: -20px;
+	}
+
+	/*Carousel*/
+
+	#thumbnail-preview-indicators {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	}
+
+	/*#thumbnail-preview-indicators .carousel-controls {
+	 	position:relative; 
+	  	width:300px;
+	  	margin:0 auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control {
+	  width:auto;
+	}*/
+
+	/*#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+	  position:static;
+	  display:block;
+	  width:auto;
+	}
+
+	#thumbnail-preview-indicators .carousel-control .glyphicon-chevron-left:before {
+	  margin-left:0;
+	}*/
+
+	#thumbnail-preview-indicators .slides .slide-1, 
+	#thumbnail-preview-indicators .slides .slide-2,
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-size: cover;
+	  background-position: center center;
+	  background-repeat: no-repeat;
+	}
+	    #thumbnail-preview-indicators,
+	    #thumbnail-preview-indicators .slides,
+	    #thumbnail-preview-indicators .slides .slide-1, 
+	    #thumbnail-preview-indicators .slides .slide-2,
+	    #thumbnail-preview-indicators .slides .slide-3 {
+	      height: 500px;
+	    }
+	#thumbnail-preview-indicators .slides .slide-1 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg); 
+	}
+	#thumbnail-preview-indicators .slides .slide-2 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg);
+	}
+	#thumbnail-preview-indicators .slides .slide-3 {
+	  background-image: url(https://s3.amazonaws.com/ooomf-com-files/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg);
+	}
+	#thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
+	  top: 20%;
+	  /*bottom: inherit;*/
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li {
+		background-color: rgba(255,255,255,0.1);
+		position: relative;
+	  	width: 100px;
+	  	height: 4px;
+	  	border-radius: 0;
+	  	border: 1px solid rgba(255,255,255,0.1); 
+	}
+
+	#thumbnail-preview-indicators .carousel-indicators li.active {
+	  position: relative;
+	  width: 100px;
+	  height: 4px;
+	  border-radius: 0;  
+	  background-color: rgba(255,255,255,0.7);
+	}
+	#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	  position: absolute;
+	  top: 0;
+	  width: 100px;
+	  display: none;
+	  opacity: 0;
+	  left: 50%;
+	  margin-top: -80px;
+	  margin-left: -50px;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail {
+	  display: block;
+	  opacity: .8;
+	}
+	#thumbnail-preview-indicators .carousel-indicators li.active > .thumbnail:hover{
+	  opacity: 1;
+	}
+	@media screen and (max-width : 480px) {    
+	    #thumbnail-preview-indicators .carousel-indicators li,
+	    #thumbnail-preview-indicators .carousel-indicators li.active {
+	      width: 50px;
+	      height: 8px;
+	      position: relative;
+	    }
+	    #thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
+	       width: 50px;
+	       left: 50%;
+	       margin-top: -50px;
+	       margin-left: -25px;
+	    }
+	}
+
+	#thumbnail-preview-indicators .carousel-control {
+
+	}
+
+	#thumbnail-preview-indicators .carousel-inner .btn-primary {
+		background-color: rgba(19, 41, 60, 1);
+	}
+
+	/*Image Carousel*/
+
+	/*What We Do*/
+
+	.what-we-do {
+		margin-top: 30px;
+	}
+
+	.what-we-do .text-block {
+		text-align: center;
+	}
+
+	.what-we-do .partial {
+		margin-top: 30px;
+	}
+
+	/*News*/
+
+	.news {
+		margin-top: 30px;
+	}
+
+	.news .news-block {
+		height: 500px;
+		background-color: rgba(245, 245, 245, 0.7);
+	}
+
+	.news .news-block .title-block {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.news .inner-block {
+		height: 300px;
+		background-color: white;
+		border: 1px solid rgba(19, 41, 60, 0.7);
+		margin-top: 30px;
+	}
+
+	.news .inner-block .title-block {
+
+	}
+
+	.news .inner-block .date-block {
+		text-align: center;
+	}
+
+	.news .inner-block .text-block {
+		margin-top: 30px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+
+	/*More Info*/
+
+	.more-info .more-info-block {
+		height: 500px;
+		background-image: url(../public_images/book.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	.more-info .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	/*Contact Us*/
+
+	.contact-us {
+		height: 500px;
+		margin-top: 0px;
+		background-image: url(../public_images/nyc_skyline.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	.contact-us .block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+	}
+
+	.contact-us .block .text-block .btn-default {
+		background-color: rgba(19, 41, 60, 1);
+		color: white;
+	}
 }
 
 /*Header*/
@@ -133,70 +1213,105 @@
     }
 }
 
-/*General Info*/
+#thumbnail-preview-indicators .carousel-control {
 
-.general-info {
-	margin-top: 50px;
-	height: 200px;
 }
 
-.general-info .text-block {
-	text-align: center;
-	padding-top: 30px;
+#thumbnail-preview-indicators .carousel-inner .btn-primary {
+	background-color: rgba(19, 41, 60, 1);
 }
 
-/*Info Block*/
+/*Image Carousel*/
 
-.info-block {
-	margin-top: 50px;
-}
+/*What We Do*/
 
-.info-block .row {
-	margin-left: -5px !important; 
-	margin-right: -5px !important;
-}
-
-.info-block .inner-block {
-	height: 200px;
-	padding-left: 5px !important; 
-	padding-right: 5px !important;
-	border: 1px solid rgba(0,0,0,0.1);
-	border-radius: 1px;
-	background-size: cover;
-  	background-position: center center;
-  	background-repeat: no-repeat;
-}
-
-.info-block .inner-block-1 {
-	background-image: url(https://www.apple.com/euro/ipad-pro/b/generic/images/og.jpg?201609061118);
-}
-
-.info-block .inner-block .text-block {
-	text-align: center;
-	padding-top: 10px;
-}
-
-/*Bottom Links*/
-
-.bottom-links {
-	margin-top: 50px;
-	height: 250px;
-	width: 100%;
-	background-color: gray;
-}
-
-.bottom-links .block {
-	height: 230px;
-	background-color: gray;
-}
-
-.bottom-links .text-block {
+.what-we-do {
 	margin-top: 30px;
-	height: 100%;
 }
 
-/*Footer*/
+.what-we-do .text-block {
+	text-align: center;
+}
 
-.footer .links-block {
-	clear: left;
+.what-we-do .partial {
+	margin-top: 30px;
+}
+
+/*News*/
+
+.news {
+	margin-top: 30px;
+}
+
+.news .news-block {
+	height: 500px;
+	background-color: rgba(245, 245, 245, 0.7);
+}
+
+.news .news-block .title-block {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.news .inner-block {
+	height: 300px;
+	background-color: white;
+	border: 1px solid rgba(19, 41, 60, 0.7);
+	margin-top: 30px;
+}
+
+.news .inner-block .title-block {
+
+}
+
+.news .inner-block .date-block {
+	text-align: center;
+}
+
+.news .inner-block .text-block {
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+/*More Info*/
+
+.more-info .more-info-block {
+	height: 500px;
+	background-image: url(../public_images/book.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.more-info .block .text-block {
+	text-align: center;
+	margin-top: 200px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+}
+
+/*Contact Us*/
+
+.contact-us {
+	height: 500px;
+	margin-top: 0px;
+	background-image: url(../public_images/nyc_skyline.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+.contact-us .block .text-block {
+	text-align: center;
+	margin-top: 200px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+}
+
+.contact-us .block .text-block .btn-default {
+	background-color: rgba(19, 41, 60, 1);
+	color: white;
 }
