@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "/contact", to: "pages#contact", as: :contact
   get "/support", to: "pages#support", as: :support
   get "/gallery", to: "pages#gallery", as: :gallery
-  get "/vacancies", to: "pages#vacancies", as: :jobs
+  get "/vacancies", to: "pages#vacancies", as: :vacancies
   get "/events", to: "pages#events", as: :events
   get "/faq", to: "pages#faq", as: :faq
 end
