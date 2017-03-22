@@ -215,8 +215,14 @@
 	margin-top: 500px;
 }
 
-.address-info hr {
-	width: 90%;
+.address-info .image-block {
+	height: 500px;
+	background-color: green;
+}
+
+.address-info .image-block .text-block {
+	padding-top: 250px;
+	color: #e1e1e1;
 }
 
 .address-info .map-block .text {
