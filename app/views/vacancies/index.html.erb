@@ -1,0 +1,40 @@
+<section class="vacancies-index-header">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 image-block">
+				<div class="text-block">
+					<h1>Join us</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="vacancies-index-list">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 filter-block">
+				<%= form_tag vacancies_path, method: 'get' do %>
+				  <div class="search-block">
+				    <%= text_field_tag :search, params[:search], class: 'form-control search-form', placeholder: 'Search for vavancies' %>
+				    <%= submit_tag "Search", name: nil, class: 'btn btn-default btn-sm' %>
+				  </div>
+				<% end %>
+			</div>
+			<% @vacancies.each do |vacancy| %>
+				<%= link_to vacancy_path(vacancy) do %>
+					<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 inner-block">
+						<div class="title-block">
+							<h3><%= link_to vacancy.title, vacancy_path(vacancy) %></h3>
+						</div>
+						<div class="category-block">
+							<h5>Mock</h5>
+						</div>
+						<div class="location-block">
+							<h5><%= vacancy.location %></h5>
+						</div>
+					</div>
+				<% end %>
+			<% end %>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,648 @@
+@media only screen and (max-width : 320px) {
+	/*Form*/
+
+	/*Index*/
+
+	/*Header*/
+
+	.vacancies-index-header {
+		height: auto;
+	}
+
+	.vacancies-index-header .image-block {
+		height: 500px;
+		background-color: green;
+		margin-top: -20px;
+	}
+
+	.vacancies-index-header .image-block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.vacancies-index-list {
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.vacancies-index-list .filter-block {
+		height: 200px;
+	}
+
+	.vacancies-index-list .filter-block .search-block {
+		margin-top: 30px;
+	}
+
+	.vacancies-index-list .filter-block .search-block .search-form {
+		width: 500px;
+	}
+
+	.vacancies-index-list .inner-block {
+		height: auto;
+		background-color: rgba(224,224,224,0.5);
+		border: 1px solid rgba(19,41,60,0.5);
+		margin-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	/*Show*/
+
+	/*Header*/
+
+	.vacancy-show-header-block {
+		height: 500px;
+	}
+
+	.vacancy-show-header-block .image-block {
+		height: 500px;
+		margin-top: -20px;
+		background-image: url(/public_images/people_at_computer.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.vacancy-show-header-block .image-block .text-block {
+		text-align: center;
+		padding-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.info-block {
+		height: auto;
+	}
+
+	.info-block .fields-block {
+		height: auto;
+		margin-top: 30px;
+		margin-bottom: 100px;
+	}
+
+	.info-block .fields-block .title-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .location-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .desc-block {
+		margin-top: 100px;
+	}
+
+	.info-block .fields-block .requirements-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .responsibilities-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .additional-requirements-block {
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	/*Form*/
+
+	/*Index*/
+
+	/*Header*/
+
+	.vacancies-index-header {
+		height: auto;
+	}
+
+	.vacancies-index-header .image-block {
+		height: 500px;
+		background-color: green;
+		margin-top: -20px;
+	}
+
+	.vacancies-index-header .image-block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.vacancies-index-list {
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.vacancies-index-list .filter-block {
+		height: 200px;
+	}
+
+	.vacancies-index-list .filter-block .search-block {
+		margin-top: 30px;
+	}
+
+	.vacancies-index-list .filter-block .search-block .search-form {
+		width: 500px;
+	}
+
+	.vacancies-index-list .inner-block {
+		height: auto;
+		background-color: rgba(224,224,224,0.5);
+		border: 1px solid rgba(19,41,60,0.5);
+		margin-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	/*Show*/
+
+	/*Header*/
+
+	.vacancy-show-header-block {
+		height: 500px;
+	}
+
+	.vacancy-show-header-block .image-block {
+		height: 500px;
+		margin-top: -20px;
+		background-image: url(/public_images/people_at_computer.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.vacancy-show-header-block .image-block .text-block {
+		text-align: center;
+		padding-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.info-block {
+		height: auto;
+	}
+
+	.info-block .fields-block {
+		height: auto;
+		margin-top: 30px;
+		margin-bottom: 100px;
+	}
+
+	.info-block .fields-block .title-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .location-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .desc-block {
+		margin-top: 100px;
+	}
+
+	.info-block .fields-block .requirements-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .responsibilities-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .additional-requirements-block {
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	/*Form*/
+
+	/*Index*/
+
+	/*Header*/
+
+	.vacancies-index-header {
+		height: auto;
+	}
+
+	.vacancies-index-header .image-block {
+		height: 500px;
+		background-color: green;
+		margin-top: -20px;
+	}
+
+	.vacancies-index-header .image-block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.vacancies-index-list {
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.vacancies-index-list .filter-block {
+		height: 200px;
+	}
+
+	.vacancies-index-list .filter-block .search-block {
+		margin-top: 30px;
+	}
+
+	.vacancies-index-list .filter-block .search-block .search-form {
+		width: 500px;
+	}
+
+	.vacancies-index-list .inner-block {
+		height: auto;
+		background-color: rgba(224,224,224,0.5);
+		border: 1px solid rgba(19,41,60,0.5);
+		margin-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	/*Show*/
+
+	/*Header*/
+
+	.vacancy-show-header-block {
+		height: 500px;
+	}
+
+	.vacancy-show-header-block .image-block {
+		height: 500px;
+		margin-top: -20px;
+		background-image: url(/public_images/people_at_computer.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.vacancy-show-header-block .image-block .text-block {
+		text-align: center;
+		padding-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.info-block {
+		height: auto;
+	}
+
+	.info-block .fields-block {
+		height: auto;
+		margin-top: 30px;
+		margin-bottom: 100px;
+	}
+
+	.info-block .fields-block .title-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .location-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .desc-block {
+		margin-top: 100px;
+	}
+
+	.info-block .fields-block .requirements-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .responsibilities-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .additional-requirements-block {
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	/*Form*/
+
+	/*Index*/
+
+	/*Header*/
+
+	.vacancies-index-header {
+		height: auto;
+	}
+
+	.vacancies-index-header .image-block {
+		height: 500px;
+		background-color: green;
+		margin-top: -20px;
+	}
+
+	.vacancies-index-header .image-block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.vacancies-index-list {
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.vacancies-index-list .filter-block {
+		height: 200px;
+	}
+
+	.vacancies-index-list .filter-block .search-block {
+		margin-top: 30px;
+	}
+
+	.vacancies-index-list .filter-block .search-block .search-form {
+		width: 500px;
+	}
+
+	.vacancies-index-list .inner-block {
+		height: auto;
+		background-color: rgba(224,224,224,0.5);
+		border: 1px solid rgba(19,41,60,0.5);
+		margin-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	/*Show*/
+
+	/*Header*/
+
+	.vacancy-show-header-block {
+		height: 500px;
+	}
+
+	.vacancy-show-header-block .image-block {
+		height: 500px;
+		margin-top: -20px;
+		background-image: url(/public_images/people_at_computer.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.vacancy-show-header-block .image-block .text-block {
+		text-align: center;
+		padding-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.info-block {
+		height: auto;
+	}
+
+	.info-block .fields-block {
+		height: auto;
+		margin-top: 30px;
+		margin-bottom: 100px;
+	}
+
+	.info-block .fields-block .title-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .location-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .desc-block {
+		margin-top: 100px;
+	}
+
+	.info-block .fields-block .requirements-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .responsibilities-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .additional-requirements-block {
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	/*Form*/
+
+	/*Index*/
+
+	/*Header*/
+
+	.vacancies-index-header {
+		height: auto;
+	}
+
+	.vacancies-index-header .image-block {
+		height: 500px;
+		background-color: green;
+		margin-top: -20px;
+	}
+
+	.vacancies-index-header .image-block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.vacancies-index-list {
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.vacancies-index-list .filter-block {
+		height: 200px;
+	}
+
+	.vacancies-index-list .filter-block .search-block {
+		margin-top: 30px;
+	}
+
+	.vacancies-index-list .filter-block .search-block .search-form {
+		width: 500px;
+	}
+
+	.vacancies-index-list .inner-block {
+		height: auto;
+		background-color: rgba(224,224,224,0.5);
+		border: 1px solid rgba(19,41,60,0.5);
+		margin-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	/*Show*/
+
+	/*Header*/
+
+	.vacancy-show-header-block {
+		height: 500px;
+	}
+
+	.vacancy-show-header-block .image-block {
+		height: 500px;
+		margin-top: -20px;
+		background-image: url(/public_images/people_at_computer.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.vacancy-show-header-block .image-block .text-block {
+		text-align: center;
+		padding-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.info-block {
+		height: auto;
+	}
+
+	.info-block .fields-block {
+		height: auto;
+		margin-top: 30px;
+		margin-bottom: 100px;
+	}
+
+	.info-block .fields-block .title-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .location-block {
+		margin-top: 30px;
+	}
+
+	.info-block .fields-block .desc-block {
+		margin-top: 100px;
+	}
+
+	.info-block .fields-block .requirements-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .responsibilities-block {
+		margin-top: 50px;
+	}
+
+	.info-block .fields-block .additional-requirements-block {
+		margin-top: 50px;
+	}
+}
+
+/*Form*/
+
+/*Index*/
+	
+	/*Header*/
+
+	.vacancies-index-header {
+		height: auto;
+	}
+
+	.vacancies-index-header .image-block {
+		height: 500px;
+		background-color: green;
+		margin-top: -20px;
+	}
+
+	.vacancies-index-header .image-block .text-block {
+		text-align: center;
+		margin-top: 200px;
+		color: #fff;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+	.vacancies-index-list {
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.vacancies-index-list .filter-block {
+		height: 200px;
+	}
+
+	.vacancies-index-list .filter-block .search-block {
+		margin-top: 30px;
+	}
+
+	.vacancies-index-list .filter-block .search-block .search-form {
+		width: 500px;
+	}
+
+	.vacancies-index-list .inner-block {
+		height: auto;
+		background-color: rgba(224,224,224,0.5);
+		border: 1px solid rgba(19,41,60,0.5);
+		margin-top: 20px;
+		padding-bottom: 10px;
+	}
+
+/*Show*/
+	
+	/*Header*/
+
+.vacancy-show-header-block {
+	height: 500px;
+}
+
+.vacancy-show-header-block .image-block {
+	height: 500px;
+	margin-top: -20px;
+	background-image: url(/public_images/people_at_computer.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.vacancy-show-header-block .image-block .text-block {
+	text-align: center;
+	padding-top: 200px;
+	color: #fff;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.info-block {
+	height: auto;
+}	
+
+.info-block .fields-block {
+	height: auto;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.info-block .fields-block .title-block {
+	margin-top: 30px
+}
+
+.info-block .fields-block .location-block {
+	margin-top: 30px;
+}
+
+.info-block .fields-block .desc-block {
+	margin-top: 100px;
+}
+
+.info-block .fields-block .requirements-block {
+	margin-top: 50px;
+}
+
+.info-block .fields-block .responsibilities-block {
+	margin-top: 50px;
+}
+
+.info-block .fields-block .additional-requirements-block {
+	margin-top: 50px;
+}
+
+
+

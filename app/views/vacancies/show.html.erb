@@ -1,0 +1,49 @@
+
+<section class="vacancy-show-header-block">
+	<div class="container-fluid image-block">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="text-block">
+					<h1><%= @vacancy.title %></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="info-block">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12 fields-block">
+				<div class="title-block">
+					<h3><%= @vacancy.title %></h3>
+				</div>
+				<div class="location-block">
+					<h4><%= @vacancy.location %></h4>
+				</div>
+				<div class="desc-block">
+					<h4>Description</h4>
+					<p><%= @vacancy.desc %></p>
+				</div>
+				<div class="requirements-block">
+					<h4>Who we are looking for</h4>
+					<p><%= @vacancy.requirements %></p>
+				</div>
+				<div class="responsibilities-block">
+					<h4>Responsibilities</h4>
+					<p><%= @vacancy.responsibilities %></p>
+				</div>
+				<% if @vacancy.additional_requirements.present? %>
+					<div class="additional-requirements-block">
+						<h4>Would be a big plus to have</h4>
+						<%= @vacancy.additional_requirements %>
+					</div>
+				<% end %>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 sidebar-block">
+				<div class="">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
