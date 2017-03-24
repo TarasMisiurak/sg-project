@@ -71,3 +71,6 @@ gem "slim-rails"
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+

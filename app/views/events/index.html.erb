@@ -1,0 +1,42 @@
+<section class="events-header-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 image-block">
+				<div class="text-block">
+					<h1>Our Events</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="upcoming-events-section">
+	<div class="container-fluid">
+	<% @upcoming_events.each do |u_event| %>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="title-block">
+					<%= u_event.title %>
+				</div>
+				<div class="desc-block">
+					<%= u_event.desc %>
+				</div>
+				<div class="start-time">
+					<%= u_event.start_time %>
+				</div>
+				<div class="end_time">
+					<%= u_event.end_time %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+	</div>
+</section>
+<section class="events-calendar-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+				<div id="calendar"></div>
+			</div>
+		</div>
+	</div>
+</section>

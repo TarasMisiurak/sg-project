@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   root "pages#home"
 
-  resources :vacancies
+  resources :vacancies, :events, :posts
 
   get "/about", to: "pages#about", as: :about
   get "/portfolio", to: "pages#portfolio", as: :portfolio
@@ -13,6 +13,5 @@ Rails.application.routes.draw do
   get "/support", to: "pages#support", as: :support
   get "/gallery", to: "pages#gallery", as: :gallery
   get "/jobs", to: "pages#jobs", as: :jobs
-  get "/events", to: "pages#events", as: :events
   get "/faq", to: "pages#faq", as: :faq
 end

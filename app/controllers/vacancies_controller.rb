@@ -43,7 +43,7 @@ class VacanciesController < ApplicationController
 
   def destroy
   	if @vacancy.destroy
-  		flash.now[:notice] = "Deleted #{@vacancy.title} vacancy!"
+  		flash.now[:notice] = "Deleted vacancy!"
   		redirect_to vacancies_path
   	else
   		flash.now[:alert] = "Error!"
