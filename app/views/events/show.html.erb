@@ -1,7 +1,7 @@
-<section>
+<section class="events-show-header">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 event-block">
 				<div class="title-block">
 					<h3><%= @event.title %></h3>
 				</div>
@@ -9,12 +9,39 @@
 					<p><%= @event.desc %></p>
 				</div>
 				<div class="start-time">
-					<%= @event.start_time %>
+					<h5>Event starts on:</h5>
+					<%= @event.start_time.strftime('%H:%M, %b %d, %Y') %>
 				</div>
 				<div class="end-time">
-					<%= @event.end_time %>
+					<h5>Event ends on:</h5>
+					<%= @event.end_time.strftime('%H:%M, %b %d, %Y') %>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
+<section class="events-show-upcoming-events">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 upcoming-events-title">
+				<div class="text-block">
+					<h1><%= t 'views.event.show.more_events' %></h1>
+				</div>
+			</div>
+		<% @upcoming_events.each do |u_event| %>
+			<%= link_to event_path(u_event), class: 'event-link' do %>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 upcoming-event-block">
+					<div class="text-block">
+						<div class="title-block">
+							<h3><%= u_event.title %></h3>
+						</div>
+						<div class="desc-block">
+							<p><%= u_event.desc.truncate(150) %></p>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		<% end %>
 		</div>
 	</div>
 </section>
