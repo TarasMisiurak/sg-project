@@ -4,6 +4,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   	before_action :set_locale
+
+  	before_filter :set_current_user
+
+	def set_current_user
+    	User.current = current_user
+	end
  	
  	private
 
@@ -14,6 +20,10 @@ class ApplicationController < ActionController::Base
 	def set_locale
 		I18n.locale = session[:locale] || I18n.default_locale
 		session[:locale] = I18n.locale
+	end
+
+	rescue_from CanCan::AccessDenied do |exception|
+		redirect_to main_app.root_path, :alert => exception.message
 	end
 	 
 	# Get locale from top-level domain or return nil if such locale is not available

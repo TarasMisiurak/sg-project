@@ -1,4 +1,5 @@
 class Contact < ActiveRecord::Base
+	resourcify
 	VALID_USERNAME = /\A[a-zA-Z0-9]+\z/
 	validates :name, presence: true, length: { minimum: 2, maximum: 30 },
 									format: { with: VALID_USERNAME },
