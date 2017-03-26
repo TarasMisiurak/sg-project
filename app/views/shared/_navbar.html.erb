@@ -10,13 +10,17 @@
                     </div>
                     <div class="collapse navbar-collapse navbar-menubuilder">
                         <ul class="nav navbar-nav navbar-left">
-                            <li class="nav-item <%= active_page_class(root_path) %>"><%= link_to 'Home', root_path, class: "nav-link"%></li>
-                            <li class="nav-item <%= active_page_class(portfolio_path) %>"><a class="nav-link" href="/portfolio">Portfolio</a></li>
-                            <li class="nav-item <%= active_page_class(about_path) %>"><a class="nav-link" href="/about">About</a></li>
-                            <li class="nav-item <%= active_page_class(contact_path) %>"><a class="nav-link" href="/contact">Contact</a></li>
-                            <li class="nav-item <%= active_page_class(gallery_path) %>"><a class="nav-link" href="/gallery">Gallery</a></li>
-                            <li class="nav-item <%= active_page_class(vacancies_path) %>"><a class="nav-link" href="/jobs">Vacancies</a></li>
-                             <li class="nav-item <%= active_page_class(events_path) %>"><a class="nav-link" href="/events">Events</a></li>
+                            <li class="nav-item <%= active_page_class(root_path) %>"><%= link_to I18n.t('views.pages.navbar.home'), root_path, class: "nav-link"%></li>
+                            <li class="nav-item <%= active_page_class(portfolio_path) %>"><a class="nav-link" href="/portfolio"><%= t 'views.pages.navbar.portfolio' %></a></li>
+                            <li class="nav-item <%= active_page_class(posts_path) %>"><a class="nav-link" href="/news"><%= t 'views.pages.navbar.news' %></a></li>
+                            <li class="nav-item <%= active_page_class(vacancies_path) %>"><a class="nav-link" href="/vacancies"><%= t 'views.pages.navbar.vacancies' %></a></li>
+                             <li class="nav-item <%= active_page_class(events_path) %>"><a class="nav-link" href="/events"><%= t 'views.pages.navbar.events' %></a></li>
+                             <li class="nav-item <%= active_page_class(contacts_new_path) %>"><%= link_to I18n.t('views.pages.navbar.contact'), contacts_new_path, class: 'nav-link' %></li>
+                             <li class="nav-item <%= active_page_class(about_path) %>"><a class="nav-link" href="/about"><%= t 'views.pages.navbar.about' %></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><%= link_to_unless I18n.locale == :en, "en", set_language_english_path %></li>
+                            <li class="nav-item"><%= link_to_unless I18n.locale == :ua, "ua", set_language_ukrainian_path %></li>
                         </ul>
                     </div>
                 </div>

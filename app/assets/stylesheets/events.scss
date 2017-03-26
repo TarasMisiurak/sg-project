@@ -1,3 +1,754 @@
-// Place all the styles related to the Events controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@media only screen and (max-width : 320px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.events-header-section {
+		height: auto;
+
+		.container-fluid {
+			margin-top: -20px;
+
+			.image-block {
+				height: 500px;
+				background-color: green;
+
+				.text-block {
+					text-align: center;
+					margin-top: 200px;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+
+	@keyframes event-block-hover {
+		from{background-color: rgba(19,41,60,0.1);}
+		to{background-color: rgba(19,41,60,0.2);}
+	}
+
+	.upcoming-events-section {
+		height: auto;
+
+		.container-fluid {
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.event-block {
+				margin-top: 30px;
+				padding: 10px 30px 30px 30px;
+				background-color: rgba(19,41,60,0.1);
+
+				.desc-block {
+					margin-top: 30px;
+				}
+
+				.start-time {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+
+	.events-calendar-section {
+		height: auto;
+
+		.calendar-block {
+
+			.text-block {
+				text-align: center;
+				margin-top: 50px;
+			}
+
+			#calendar {
+				margin-top: 100px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-header {
+		height: auto;
+
+		.container-fluid {
+			
+			.event-block {
+				margin-top: 30px;
+				padding-top: 30px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-upcoming-events {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+			background-color: green;
+
+			.upcoming-events-title {
+
+				.text-block {
+					text-align: center;
+					color: white;
+					margin-top: 50px;
+				}
+			}
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.upcoming-event-block {
+				height: 200px;
+				margin-top: 100px;
+				border: 1px solid rgba(19,41,60,0.7);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+					padding-top: 30px;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width : 480px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.events-header-section {
+		height: auto;
+
+		.container-fluid {
+			margin-top: -20px;
+
+			.image-block {
+				height: 500px;
+				background-color: green;
+
+				.text-block {
+					text-align: center;
+					margin-top: 200px;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+
+	@keyframes event-block-hover {
+		from{background-color: rgba(19,41,60,0.1);}
+		to{background-color: rgba(19,41,60,0.2);}
+	}
+
+	.upcoming-events-section {
+		height: auto;
+
+		.container-fluid {
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.event-block {
+				margin-top: 30px;
+				padding: 10px 30px 30px 30px;
+				background-color: rgba(19,41,60,0.1);
+
+				.desc-block {
+					margin-top: 30px;
+				}
+
+				.start-time {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+
+	.events-calendar-section {
+		height: auto;
+
+		.calendar-block {
+
+			.text-block {
+				text-align: center;
+				margin-top: 50px;
+			}
+
+			#calendar {
+				margin-top: 100px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-header {
+		height: auto;
+
+		.container-fluid {
+			
+			.event-block {
+				margin-top: 30px;
+				padding-top: 30px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-upcoming-events {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+			background-color: green;
+
+			.upcoming-events-title {
+
+				.text-block {
+					text-align: center;
+					color: white;
+					margin-top: 50px;
+				}
+			}
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.upcoming-event-block {
+				height: 200px;
+				margin-top: 100px;
+				border: 1px solid rgba(19,41,60,0.7);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+					padding-top: 30px;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width : 768px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.events-header-section {
+		height: auto;
+
+		.container-fluid {
+			margin-top: -20px;
+
+			.image-block {
+				height: 500px;
+				background-color: green;
+
+				.text-block {
+					text-align: center;
+					margin-top: 200px;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+
+	@keyframes event-block-hover {
+		from{background-color: rgba(19,41,60,0.1);}
+		to{background-color: rgba(19,41,60,0.2);}
+	}
+
+	.upcoming-events-section {
+		height: auto;
+
+		.container-fluid {
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.event-block {
+				margin-top: 30px;
+				padding: 10px 30px 30px 30px;
+				background-color: rgba(19,41,60,0.1);
+
+				.desc-block {
+					margin-top: 30px;
+				}
+
+				.start-time {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+
+	.events-calendar-section {
+		height: auto;
+
+		.calendar-block {
+
+			.text-block {
+				text-align: center;
+				margin-top: 50px;
+			}
+
+			#calendar {
+				margin-top: 100px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-header {
+		height: auto;
+
+		.container-fluid {
+			
+			.event-block {
+				margin-top: 30px;
+				padding-top: 30px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-upcoming-events {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+			background-color: green;
+
+			.upcoming-events-title {
+
+				.text-block {
+					text-align: center;
+					color: white;
+					margin-top: 50px;
+				}
+			}
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.upcoming-event-block {
+				height: 200px;
+				margin-top: 100px;
+				border: 1px solid rgba(19,41,60,0.7);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+					padding-top: 30px;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width : 992px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.events-header-section {
+		height: auto;
+
+		.container-fluid {
+			margin-top: -20px;
+
+			.image-block {
+				height: 500px;
+				background-color: green;
+
+				.text-block {
+					text-align: center;
+					margin-top: 200px;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+
+	@keyframes event-block-hover {
+		from{background-color: rgba(19,41,60,0.1);}
+		to{background-color: rgba(19,41,60,0.2);}
+	}
+
+	.upcoming-events-section {
+		height: auto;
+
+		.container-fluid {
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.event-block {
+				margin-top: 30px;
+				padding: 10px 30px 30px 30px;
+				background-color: rgba(19,41,60,0.1);
+
+				.desc-block {
+					margin-top: 30px;
+				}
+
+				.start-time {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+
+	.events-calendar-section {
+		height: auto;
+
+		.calendar-block {
+
+			.text-block {
+				text-align: center;
+				margin-top: 50px;
+			}
+
+			#calendar {
+				margin-top: 100px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-header {
+		height: auto;
+
+		.container-fluid {
+			
+			.event-block {
+				margin-top: 30px;
+				padding-top: 30px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-upcoming-events {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+			background-color: green;
+
+			.upcoming-events-title {
+
+				.text-block {
+					text-align: center;
+					color: white;
+					margin-top: 50px;
+				}
+			}
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.upcoming-event-block {
+				height: 200px;
+				margin-top: 100px;
+				border: 1px solid rgba(19,41,60,0.7);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+					padding-top: 30px;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.events-header-section {
+		height: auto;
+
+		.container-fluid {
+			margin-top: -20px;
+
+			.image-block {
+				height: 500px;
+				background-color: green;
+
+				.text-block {
+					text-align: center;
+					margin-top: 200px;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+
+	@keyframes event-block-hover {
+		from{background-color: rgba(19,41,60,0.1);}
+		to{background-color: rgba(19,41,60,0.2);}
+	}
+
+	.upcoming-events-section {
+		height: auto;
+
+		.container-fluid {
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.event-block {
+				margin-top: 30px;
+				padding: 10px 30px 30px 30px;
+				background-color: rgba(19,41,60,0.1);
+
+				.desc-block {
+					margin-top: 30px;
+				}
+
+				.start-time {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+
+	.events-calendar-section {
+		height: auto;
+
+		.calendar-block {
+
+			.text-block {
+				text-align: center;
+				margin-top: 50px;
+			}
+
+			#calendar {
+				margin-top: 100px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-header {
+		height: auto;
+
+		.container-fluid {
+			
+			.event-block {
+				margin-top: 30px;
+				padding-top: 30px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-upcoming-events {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+			background-color: green;
+
+			.upcoming-events-title {
+
+				.text-block {
+					text-align: center;
+					color: white;
+					margin-top: 50px;
+				}
+			}
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.upcoming-event-block {
+				height: 200px;
+				margin-top: 100px;
+				border: 1px solid rgba(19,41,60,0.7);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+					padding-top: 30px;
+				}
+			}
+		}
+	}
+
+}
+
+
+	
+	/*Index*/
+
+	/*Header*/
+
+	.events-header-section {
+		height: auto;
+
+		.container-fluid {
+			margin-top: -20px;
+
+			.image-block {
+				height: 500px;
+				background-color: green;
+
+				.text-block {
+					text-align: center;
+					margin-top: 200px;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+
+	@keyframes event-block-hover {
+		from{background-color: rgba(19,41,60,0.1);}
+		to{background-color: rgba(19,41,60,0.2);}
+	}
+
+	.upcoming-events-section {
+		height: auto;
+
+		.container-fluid {
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.event-block {
+				margin-top: 30px;
+				padding: 10px 30px 30px 30px;
+				background-color: rgba(19,41,60,0.1);
+
+				.desc-block {
+					margin-top: 30px;
+				}
+
+				.start-time {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+
+	.events-calendar-section {
+		height: auto;
+
+		.calendar-block {
+
+			.text-block {
+				text-align: center;
+				margin-top: 50px;
+			}
+
+			#calendar {
+				margin-top: 100px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-header {
+		height: auto;
+
+		.container-fluid {
+			
+			.event-block {
+				margin-top: 30px;
+				padding-top: 30px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.events-show-upcoming-events {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+			background-color: green;
+
+			.upcoming-events-title {
+
+				.text-block {
+					text-align: center;
+					color: white;
+					margin-top: 50px;
+				}
+			}
+
+			.event-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.upcoming-event-block {
+				height: 200px;
+				margin-top: 100px;
+				border: 1px solid rgba(19,41,60,0.7);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+					padding-top: 30px;
+				}
+			}
+		}
+	}
+

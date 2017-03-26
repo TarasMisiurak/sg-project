@@ -1,0 +1,15 @@
+ua:
+  views:
+    show: Показати
+    edit: Редагувати
+    destroy: Видалити
+    are_you_sure: Ви впевнені?
+    back: Назад
+    vacancy:
+      index:
+        title: Приєднюйтеся до нас
+      show:
+        description: Опис
+        looking_for: Кого ми шукаємо
+        responsibilities: Обов'язки
+        additional_req: Буде перевагою

@@ -1,0 +1,76 @@
+en:
+  views:
+    pages:
+      home:
+        title: Awesome - Main Page
+        carousel:
+          h_1: Our Projects
+          p_1: Find out about technologies that we use
+          btn_1: Portfolio
+          h_2: Our company
+          p_2: Great company with great values
+          btn_2: Find Out More
+          h_3: Contact us
+          p_3: Send us an email
+          btn_3: Contact
+        what_we_do: What we do
+        what_we_do_p: We are a global software making company. Etc.
+        news: News
+        learn_more: Learn More
+        visit_our: Visit our
+        about: About
+        faq: FAQ
+        pages: pages
+        have_question: Have a question?
+        ask_anything: Ask us anything
+        contact_us: Contact us
+      portfolio:
+        title: Our works
+        what_we_do: What we do
+        visit_about_us:
+          visit: Visit
+          about_us: about us
+          find_out_more: to find out more about our company
+        partners: Our partners
+      contact:
+        title: Contact
+        ask_anything: Ask us anything
+        find_out_more: Want to find out more?
+        visit_about:
+          visit: Visit our
+          about: About
+          faq: FAQ
+          pages: pages
+      about:
+        title: About Us
+        company_desc: We are a cool company and that and this and so on.
+        satisfied_customers: Satisfied Customers
+        rating: Our average rating
+        completed_projects: Completed Projects
+        world_rank: Place in world
+        values: Company values
+        simple_string: Simple.
+        desc_1: We're trying to keep things as simple as possible
+        great_products: Great products
+        desc_2: We make Awesome products to satisfy every customer
+        customer_support: Customer support Everywhere. Anytime. Day & Night.
+        desc_3: We provide customer support worldwide anytime and in many ways
+        made_for_people: Made for people by people
+        desc_4: With love in heart & engeneering in mind
+        team: Awesome Team
+        view_more_btn: View More
+        our_office: Our office
+        location: HQ location
+        address: Corporate Address
+        city: Mountaint View, CA
+        contact_us: Contact Us
+        tell_us: Do you have anything to tell us?
+        write_email: Write us an email
+      navbar:
+        home: Home
+        portfolio: Portfolio
+        news: News
+        vacancies: Vacancies
+        events: Events
+        contact: Contact
+        about: About

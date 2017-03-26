@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Awesome - Main Page</title>
+	<title><%= t 'views.pages.home.title' %></title>
 
 	<link rel="stylesheet" type="text/css" href="/assets/stylesheets/home">
 </head>
@@ -36,9 +36,9 @@
 								<div class="slide-1"></div>
 									<div class="container">
 										<div class="carousel-caption">
-											<h1>What we do</h1>
-											<p>Find out about technologies that we use</p>
-											<p><a class="btn btn-lg btn-primary" href="/portfolio" role="button">Portfolio</a></p>
+											<h1><%= t 'views.pages.home.carousel.h_1' %></h1>
+											<p><%= t 'views.pages.home.carousel.p_1' %></p>
+											<p><a class="btn btn-lg btn-primary" href="/portfolio" role="button"><%= t 'views.pages.home.carousel.btn_1' %></a></p>
 										</div>
 									</div>
 							</div>
@@ -46,9 +46,9 @@
 								<div class="slide-2"></div>
 									<div class="container">
 										<div class="carousel-caption">
-											<h1>Our company</h1>
-											<p>Great company with great values</p>
-											<p><a class="btn btn-lg btn-primary" href="/about" role="button">Find Out More</a></p>
+											<h1><%= t 'views.pages.home.carousel.h_2' %></h1>
+											<p><%= t 'views.pages.home.carousel.p_1' %></p>
+											<p><a class="btn btn-lg btn-primary" href="/about" role="button"><%= t 'views.pages.home.carousel.btn_2' %></a></p>
 										</div>
 									</div>
 							</div>
@@ -56,9 +56,9 @@
 								<div class="slide-3"></div>
 									<div class="container">
 										<div class="carousel-caption">
-											<h1>Contact us</h1>
-											<p>Send us an email</p>
-											<p><a class="btn btn-lg btn-primary" href="/contact" role="button">Contact</a></p>
+											<h1><%= t 'views.pages.home.carousel.h_3' %></h1>
+											<p><%= t 'views.pages.home.carousel.p_3' %></p>
+											<p><a class="btn btn-lg btn-primary" href="/contact" role="button"><%= t 'views.pages.home.carousel.btn_3' %></a></p>
 										</div>
 									</div>
 							</div>
@@ -75,8 +75,8 @@
 			<div class="row">
 				<div class="col-12">
 						<div class="text-block">
-							<h2>What we do</h2>
-							<p>We are a global software making company. Etc.</p>
+							<h2><%= t 'views.pages.home.what_we_do' %></h2>
+							<p><%= t 'views.pages.home.what_we_do_p' %></p>
 						</div>
 				</div>
 			</div>
@@ -90,50 +90,28 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="title-block">
-						<h2>News</h2>
+						<h2><%= t 'views.pages.home.news' %></h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
+			<% Post.order('created_at DESC').limit(3).each do |post| %>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<%= link_to post_path(post), class: 'inner-link' do %>
 					<div class="inner-block">
 						<div class="title-block">
-							<h3>Test news title</h3>
+							<h3><%= post.title %></h3>
 						</div>
 						<div class="date-block">
-							<%= Time.now.strftime('%H:%M, %b %d, %Y') %>
+							<%= post.created_at.strftime('%H:%M, %b %d, %Y') %>
 						</div>
 						<div class="text-block">
-							<%= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'.truncate(250) %>
+							<p><%= post.body.truncate(250) %></p>
 						</div>
 					</div>
+					<% end %>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="inner-block">
-						<div class="title-block">
-							<h3>Test news title</h3>
-						</div>
-						<div class="date-block">
-							<%= Time.now.strftime('%H:%M, %b %d, %Y') %>
-						</div>
-						<div class="text-block">
-							<%= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'.truncate(250) %>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="inner-block">
-						<div class="title-block">
-							<h3>Test news title</h3>
-						</div>
-						<div class="date-block">
-							<%= Time.now.strftime('%H:%M, %b %d, %Y') %>
-						</div>
-						<div class="text-block">
-							<%= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'.truncate(250) %>
-						</div>
-					</div>
-				</div>
+				<% end %>
 			</div>
 		</div>
 	</section>
@@ -142,8 +120,8 @@
 			<div class="row">
 				<div class="col-12 block">
 					<div class="text-block">
-						<h1>Learn more</h1>
-						<h3>Visit our <a href="/about">About</a> &amp; <a href="/faq">FAQ</a> pages</h3>
+						<h1><%= t 'views.pages.home.learn_more' %></h1>
+						<h3><%= t 'views.pages.home.visit_our' %> <a href="/about"><%= t 'views.pages.home.about' %></a> &amp; <a href="/faq"><%= t 'views.pages.home.faq' %></a> <%= t 'views.pages.home.pages' %></h3>
 					</div>
 				</div>
 			</div>
@@ -154,9 +132,9 @@
 			<div class="row">
 				<div class="col-12 block">
 					<div class="text-block">
-						<h1>Have a question?</h1>
-						<h3>Ask us anything</h3>
-						<a href="/contact" class="btn btn-default">Contact us</a>
+						<h1><%= t 'views.pages.home.have_question' %></h1>
+						<h3><%= t 'views.pages.home.ask_anything' %></h3>
+						<a href="/contact" class="btn btn-default"><%= t 'views.pages.home.contact_us' %></a>
 					</div>
 				</div>
 			</div>

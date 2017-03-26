@@ -1,3 +1,634 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@media screen and (max-width : 320px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.post-index-header {
+		height: auto;
+
+		.image-block {
+			height: 500px;
+			background-color: green;
+			margin-top: -20px;
+
+			.text-block {
+				text-align: center;
+				margin-top: 200px;
+				color: white;
+			}
+		}
+
+	}
+
+	.post-index-news-list {
+		height: auto;
+		min-height: 500px;
+
+		.post-block {
+			height: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-title {
+				.post-link {
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+
+	.post-index-random-post {
+		height: auto;
+
+		.container-fluid {
+			height: 500px;
+			background-color: green;
+
+			.post-link {
+				text-decoration: none !important;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	/*Show*/
+
+	.post-show-section {
+		height: auto;
+
+		.post-block {
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-body {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.post-show-random-post {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+
+			.post-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width : 480px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.post-index-header {
+		height: auto;
+
+		.image-block {
+			height: 500px;
+			background-color: green;
+			margin-top: -20px;
+
+			.text-block {
+				text-align: center;
+				margin-top: 200px;
+				color: white;
+			}
+		}
+
+	}
+
+	.post-index-news-list {
+		height: auto;
+		min-height: 500px;
+
+		.post-block {
+			height: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-title {
+				.post-link {
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+
+	.post-index-random-post {
+		height: auto;
+
+		.container-fluid {
+			height: 500px;
+			background-color: green;
+
+			.post-link {
+				text-decoration: none !important;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	/*Show*/
+
+	.post-show-section {
+		height: auto;
+
+		.post-block {
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-body {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.post-show-random-post {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+
+			.post-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width : 768px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.post-index-header {
+		height: auto;
+
+		.image-block {
+			height: 500px;
+			background-color: green;
+			margin-top: -20px;
+
+			.text-block {
+				text-align: center;
+				margin-top: 200px;
+				color: white;
+			}
+		}
+
+	}
+
+	.post-index-news-list {
+		height: auto;
+		min-height: 500px;
+
+		.post-block {
+			height: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-title {
+				.post-link {
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+
+	.post-index-random-post {
+		height: auto;
+
+		.container-fluid {
+			height: 500px;
+			background-color: green;
+
+			.post-link {
+				text-decoration: none !important;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	/*Show*/
+
+	.post-show-section {
+		height: auto;
+
+		.post-block {
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-body {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.post-show-random-post {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+
+			.post-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width : 992px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.post-index-header {
+		height: auto;
+
+		.image-block {
+			height: 500px;
+			background-color: green;
+			margin-top: -20px;
+
+			.text-block {
+				text-align: center;
+				margin-top: 200px;
+				color: white;
+			}
+		}
+
+	}
+
+	.post-index-news-list {
+		height: auto;
+		min-height: 500px;
+
+		.post-block {
+			height: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-title {
+				.post-link {
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+
+	.post-index-random-post {
+		height: auto;
+
+		.container-fluid {
+			height: 500px;
+			background-color: green;
+
+			.post-link {
+				text-decoration: none !important;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	/*Show*/
+
+	.post-show-section {
+		height: auto;
+
+		.post-block {
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-body {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.post-show-random-post {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+
+			.post-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width : 1200px) {
+
+	/*Index*/
+
+	/*Header*/
+
+	.post-index-header {
+		height: auto;
+
+		.image-block {
+			height: 500px;
+			background-color: green;
+			margin-top: -20px;
+
+			.text-block {
+				text-align: center;
+				margin-top: 200px;
+				color: white;
+			}
+		}
+
+	}
+
+	.post-index-news-list {
+		height: auto;
+		min-height: 500px;
+
+		.post-block {
+			height: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-title {
+				.post-link {
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+
+	.post-index-random-post {
+		height: auto;
+
+		.container-fluid {
+			height: 500px;
+			background-color: green;
+
+			.post-link {
+				text-decoration: none !important;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	/*Show*/
+
+	.post-show-section {
+		height: auto;
+
+		.post-block {
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-body {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.post-show-random-post {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+
+			.post-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}
+
+
+	/*Index*/
+
+	/*Header*/
+
+	.post-index-header {
+		height: auto;
+
+		.image-block {
+			height: 500px;
+			background-color: green;
+			margin-top: -20px;
+
+			.text-block {
+				text-align: center;
+				margin-top: 200px;
+				color: white;
+			}
+		}
+
+	}
+
+	.post-index-news-list {
+		height: auto;
+		min-height: 500px;
+
+		.post-block {
+			height: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-title {
+				.post-link {
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+
+	.post-index-random-post {
+		height: auto;
+
+		.container-fluid {
+			height: 500px;
+			background-color: green;
+
+			.post-link {
+				text-decoration: none !important;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	/*Show*/
+
+	.post-show-section {
+		height: auto;
+
+		.post-block {
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.post-body {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.post-show-random-post {
+		height: auto;
+
+		.container-fluid {
+			min-height: 500px;
+
+			.post-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			.post-block {
+				height: 200px;
+				margin-top: 200px;
+				border: 1px solid rgba(19,41,60,1);
+				background-color: white;
+
+				.text-block {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+

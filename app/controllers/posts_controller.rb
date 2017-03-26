@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
 	def index
 		@posts = Post.order('created_at DESC')
+		@random_posts = Post.order('RANDOM()').limit(3)
 	end
 
 	def new
@@ -35,6 +36,7 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.find(params[:id])
+		@random_posts = Post.where.not(id: @post.id).order('RANDOM()').limit(3)
 	end
 
 	def destroy

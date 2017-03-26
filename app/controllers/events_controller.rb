@@ -36,6 +36,7 @@ class EventsController < ApplicationController
 
 	def show
 		@event = Event.find(params[:id])
+		@upcoming_events = Event.where.not(id: @event.id).order('start_time DESC').limit(3)
 	end
 
 	def destroy

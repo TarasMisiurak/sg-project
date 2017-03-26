@@ -1,0 +1,10 @@
+ua:
+  views:
+    show: Показати
+    edit: Редагувати
+    destroy: Видалити
+    are_you_sure: Ви впевнені?
+    back: Назад
+    post:
+      index:
+        title: Новини

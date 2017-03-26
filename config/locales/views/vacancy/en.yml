@@ -1,0 +1,15 @@
+en:
+  views:
+    show: Show
+    edit: Edit
+    destroy: Delete
+    are_you_sure: Are you sure?
+    back: Back
+    vacancy:
+      index:
+        title: Join us
+      show:
+        description: Description
+        looking_for: Who are we looking for
+        responsibilities: Responsibilities
+        additional_req: Would be a big plus to have

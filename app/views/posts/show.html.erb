@@ -1,7 +1,10 @@
 <section class="post-show-section">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 post-block">
+				<div class="back-button">
+					<h5><%= link_to 'Back', posts_path, class: 'back-link btn' %></h5>
+				</div>
 				<div class="post-title">
 					<h1><%= @post.title %></h1>
 				</div>
@@ -9,6 +12,22 @@
 					<p><%= @post.body %></p>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
+<section class="post-show-random-post">
+	<div class="container-fluid">
+		<div class="row">
+		<% @random_posts.each do |r_post| %>
+			<%= link_to post_path(r_post), class: 'post-link' do %>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 post-block">
+					<div class="text-block">
+						<h3><%= r_post.title %></h3>
+						<p><%= r_post.body.truncate(150) %></p>
+					</div>
+				</div>
+			<% end %>
+		<% end %>
 		</div>
 	</div>
 </section>

@@ -1,0 +1,17 @@
+en:
+  views:
+    show: Show
+    edit: Edit
+    destroy: Delete
+    are_you_sure: Are you sure?
+    back: Back
+    event:
+      index:
+        header_title: Our Events
+        events_calendar: Events calendar
+      show:
+        more_events: More upcoming events
+      new:
+        title: New event
+      edit:
+        title: Edit event

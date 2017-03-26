@@ -39,6 +39,7 @@ class VacanciesController < ApplicationController
 
   def show
   	@vacancy = Vacancy.find(params[:id])
+  	@random_vacancies = Vacancy.where.not(id: @vacancy.id).order('RANDOM()').limit(3)
   end
 
   def destroy

@@ -1,0 +1,17 @@
+ua:
+  views:
+    show: Показати
+    edit: Редагувати
+    destroy: Видалити
+    are_you_sure: Ви впевнені?
+    back: Назад
+    event:
+      index:
+        header_title: Наші Події
+        events_calendar: Календар подій
+      show:
+        more_events: Більше подій
+      new:
+        title: Нова подія
+      edit:
+        title: Редагування події

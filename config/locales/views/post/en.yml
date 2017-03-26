@@ -1,0 +1,10 @@
+en:
+  views:
+    show: Show
+    edit: Edit
+    destroy: Delete
+    are_you_sure: Are you sure?
+    back: Back
+    post:
+      index:
+        title: News

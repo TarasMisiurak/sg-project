@@ -21,28 +21,34 @@
 					<h4><%= @vacancy.location %></h4>
 				</div>
 				<div class="desc-block">
-					<h4>Description</h4>
+					<h4><%= t 'views.vacancy.show.description' %></h4>
 					<p><%= @vacancy.desc %></p>
 				</div>
 				<div class="requirements-block">
-					<h4>Who we are looking for</h4>
+					<h4><%= t 'views.vacancy.show.looking_for' %></h4>
 					<p><%= @vacancy.requirements %></p>
 				</div>
 				<div class="responsibilities-block">
-					<h4>Responsibilities</h4>
+					<h4><%= t 'views.vacancy.show.responsibilities' %></h4>
 					<p><%= @vacancy.responsibilities %></p>
 				</div>
 				<% if @vacancy.additional_requirements.present? %>
 					<div class="additional-requirements-block">
-						<h4>Would be a big plus to have</h4>
+						<h4><%= t 'views.vacancy.show.additional_req' %></h4>
 						<%= @vacancy.additional_requirements %>
 					</div>
 				<% end %>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 sidebar-block">
-				<div class="">
-					
-				</div>
+				<% @random_vacancies.each do |r_vacancy| %>
+					<%= link_to vacancy_path(r_vacancy), class: 'vacancy-link' do %>
+					<div class="random-post">
+						<div class="title-block">
+							<h5><%= r_vacancy.title %></h5>
+						</div>
+					</div>
+					<% end %>
+				<% end %>
 			</div>
 		</div>
 	</div>

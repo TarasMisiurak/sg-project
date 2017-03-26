@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 image-block">
 				<div class="text-block">
-					<h1>Join us</h1>
+					<h1><%= t 'views.vacancy.index.title' %></h1>
 				</div>
 			</div>
 		</div>
@@ -21,10 +21,10 @@
 				<% end %>
 			</div>
 			<% @vacancies.each do |vacancy| %>
-				<%= link_to vacancy_path(vacancy) do %>
+				<%= link_to vacancy_path(vacancy), class: 'vacancy-link' do %>
 					<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 inner-block">
 						<div class="title-block">
-							<h3><%= link_to vacancy.title, vacancy_path(vacancy) %></h3>
+							<h3><%= vacancy.title %></h3>
 						</div>
 						<div class="category-block">
 							<h5>Mock</h5>

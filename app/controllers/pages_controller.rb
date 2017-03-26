@@ -6,6 +6,8 @@ class PagesController < ApplicationController
 		else
 			render file: "public/404.html", status: :not_found
 		end
+
+		@recent_posts = Post.offset(10).order('created_at DESC')
 	end
 
 	private
