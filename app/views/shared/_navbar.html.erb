@@ -19,6 +19,7 @@
                              <li class="nav-item <%= active_page_class(about_path) %>"><a class="nav-link" href="/about"><%= t 'views.pages.navbar.about' %></a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><%= link_to 'Admin Dashboard', rails_admin.dashboard_path, class: 'nav-link' %></li>
                             <li class="nav-item"><%= link_to_unless I18n.locale == :en, "en", set_language_english_path %></li>
                             <li class="nav-item"><%= link_to_unless I18n.locale == :ua, "ua", set_language_ukrainian_path %></li>
                         </ul>

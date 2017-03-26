@@ -76,13 +76,17 @@
 .top-image .image-block {
 	height: 500px;
 	width: 100%;
-	background-color: black;
+	background-image: url('/public_images/about_us.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin-top: -20px;
 }
 
 .top-image .motto {
-	padding-top: 350px;
+	margin-top: 200px;
 	text-align: center;
+	color: white;
 }
 
 .top-image .motto .text-block h3 {
@@ -101,12 +105,12 @@
 
 .general-text .top-text-block {
 	text-align: center;
-	padding-top: 50px;
+	margin-top: 50px;
 	height: 200px;
 }
 
 .general-text .text-block {
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 .general-text .text-block p {
@@ -117,34 +121,26 @@
 	background-color: black;
 }
 
-/*Details Links*/
+.details-links {
+	height: auto;
 
-.details-links .block .block{
-	height: 280px;
-	background-color: green;
-	background-color: green;
-}
-
-.details-links .image-block-1,
-.details-links .image-block-2,
-.details-links .image-block-3,
-.details-links .image-block-4 {
-	border: 2px solid black;
-	height: 280px;
-}
-
-.details-links .text-block {
-	text-align: center;
-	margin-top: 230px;
+	.container-fluid {
+		.text-block {
+			text-align: center;
+		}
+	}
 }
 
 /*Statistics*/
 
 .statistics {
+	height: auto;
 	margin-top: 50px;
+	background-color: rgba(19,41,60,0.2);
 }
 
 .statistics .block {
+	margin-top: 50px;
 	height: 150px;
 }
 
@@ -212,17 +208,20 @@
 /*Address Info*/
 
 .address-info {
-	margin-top: 500px;
+	height: auto;
 }
 
 .address-info .image-block {
 	height: 500px;
-	background-color: green;
+	background-image: url('/public_images/office.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .address-info .image-block .text-block {
-	padding-top: 250px;
-	color: #e1e1e1;
+	padding-top: 200px;
+	color: black;
 }
 
 .address-info .map-block .text {
@@ -240,28 +239,34 @@
 	text-align: center;
 	margin-top: 100px;
 	height: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 120px;
 }
 
 /*Contact Us*/
 
-.contact-us {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
+.contact-us-about {
 
-.contact-us .header-text-block {
-	text-align: center;
-	margin-top: 50px;
-}
+	.container-fluid {
+		height: 500px;
+		background-image: url('/public_images/about_us_bottom.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		.header-text-block {
+			text-align: center;
+			margin-top: 100px;
+			color: white;
+		}
+		
+		.text-block {
+			margin-top: 100px;
+			text-align: center;
+			color: white;
 
-.contact-us .text-block {
-	margin-top: 50px;
-}
-
-/*Bottom Image*/
-
-.bottom-image {
-	background-color: black;
-	height: 500px;
+			.btn-primary {
+				background-color: rgba(19,41,60,1);
+			}
+		}
+	}
 }
